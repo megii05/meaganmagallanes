@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? 
+    family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <title>Kodax Cart</title>
+
+    </head>
+    <body>
+        <header>
+            <a class="logo">Kodax</a>
+            <ul class="navlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cameras.html">Cameras</a></li> 
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="cart">
+                <a href="shop.html"><i class='bx bx-shopping-bag'></i></a><p id="count">0</p>
+            </div>
+        </header>
+
+    
+        <div class="container1">
+            <div id="root"></div>
+            <div class="sidebar">
+                <div class="head"><p>MY CART</p></div>
+                <div id="cartItem">Your Cart is Empty</div>
+                <div class="foot">
+                    <h3>Total</h3> <h2 id="total">₱ 0.00</h2>
+                </div>
+                <div class="head"><p>INFORMATION DETAILS</p></div>
+                <div class="wrapper">
+                    <form id="infoForm" action="" method="get">
+                        <h4>Account</h4>
+                        <div class="input_group">
+                            <div class="input_box">
+                                <input type="text" name="name" placeholder="Name" required class="name">
+                                <i class="fa fa-user icon"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="email" name="email" placeholder="Email Address" required class="name">
+                                <i class="fa fa-envelope icon"></i>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <div class="input_box">
+                                <input type="text" name="address" placeholder="Address" required class="name">
+                                <i class="fa fa-map-marker icon"></i>
+                            </div>
+                            <div class="input_box">
+                                <input type="tel" name="contact" placeholder="Contact No." required class="name">
+                                <i class="fa fa-phone icon"></i>
+                            </div>
+                        </div>
+                        <div class="input_group">
+                            <div class="input_box">
+                            <input type="radio" name="payment" class="radio" id="gcash" checked>
+                            <label for="gcash"><span><i class="fa fa-money icon"></i> GCash</span></label>
+                            <input type="radio" name="payment" class="radio" id="cash">
+                            <label for="cash"><span><i class="fa fa-money icon"></i> Cash</span></label>
+                        </div></div>
+                        <div class="input_group">
+                        <div class="input_box">
+                            <button onclick="checkout()">Checkout</button>
+                        </div></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer">
+            <div class="footer-box">
+                <p>© 2024, Kodax</p>
+            </div>
+        </section>
+              
+
+        <script src="script.js"> </script>
+            
+    </body>
+</html>

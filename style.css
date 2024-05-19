@@ -1,0 +1,512 @@
+*{
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    list-styLe: none;
+    text-decoration: none; scroll-behavior: smooth;
+}
+:root{
+--bg-color: #ffffff;
+--text-color: #111111;
+--main-color: #8815f;
+--big-font: 4.5rem;
+--h2-font: 3.3rem;
+--h3-font: 2rem;
+--normal-font: 1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header {
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    box-shadow: 0px 2px 18px 0 rgb(129 162 182 / 20%);
+    padding: 20px 14%;
+    transition: all 0.35s ease;
+}
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+.navlist {
+    display: flex;
+}
+.navlist a {
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all 0.36s ease;
+}
+.navlist a:hover {
+    color: coral;
+}
+.header-icons i {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-right: 20px;
+    transition: all 0.36s ease;
+}
+.header-icons i:hover {
+    color: coral;
+}
+.home{
+    padding: 100px 14%;
+}
+.new-products{
+    padding: 100px 14%;
+}
+.home {
+    min-height: 100vh;
+    width: 100%;
+    background: url(bg1.jpeg);
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.home-text h1 {
+    font-size: var(--big-font);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.6rem;
+    margin-bottom: 1.4rem;
+}
+.home-text span {
+    font-size: var(--h2-font);
+}
+.home-text p {
+    font-size: var(--normal-font);
+    font-weight: 500;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: brown;
+    color: var(--bg-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.35s ease;
+}
+.btn:hover {
+    transform: translateY(-5px);
+    background: var(--text-color);
+}
+.center-in{
+    text-align: center;
+}
+
+.center-in img{
+    width: 15%; 
+    height: auto;
+    margin-top: 8%;
+}
+.center-in img{
+    width: 15%; 
+    height: auto;
+    margin-top: 8%;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 90px 0;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}    
+.about .about_main .image img {
+    max-width: 70%; 
+    height: auto; 
+    margin-left: 20%;
+}
+.about .about_main .about_text h1 span{
+    color: brown;
+}
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 50px;
+}
+.about .about_main .about_text p{
+    width: 650px;
+    text-align: justify;
+    margin-right: 80px;
+    line-height: 28px;
+}
+
+.center-in h2 {
+    font-size: var(--h2-font);
+    margin: 10px 0;
+}
+.center-in p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+}
+.new-products-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 2rem;
+}
+.row-img {
+    overflow: hidden;
+}
+.row-img img {
+    display: block;
+    width: 100%;
+    transition: transform 0.65s; 
+    cursor: pointer;
+}
+.row-img img:hover{
+    transform: scale(1.1);
+}
+.row{
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.row h3{
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.row h5{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--second-color);
+}
+.row .r-btnn a{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    padding: 13px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    transition: opacity 0.5s;
+    opacity: 0 ;
+}
+.row:hover .r-btnn a{
+    opacity: 1;
+}
+.shop {
+    padding: 100px 8%;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+.box {
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgba(55, 55, 55, 0.12);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.35s ease;
+}
+.box img {
+    width: 100%;
+    height: auto;
+}
+.box h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.box h5 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.box .cart i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background: black;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.box:hover{
+    transform: translateY(-8px);
+}
+.about_text i {
+    font-size: 18px; 
+    display: block; 
+}
+.cart {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.cart p {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+.cart i {
+    font-size: 28px; 
+    color: #111111;
+}
+.container1 {
+    margin-top: 100px;
+    margin-left: 90px;
+    display: flex;
+    width: 90%;
+    margin-bottom: 30px;
+}
+#root {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar {
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head {
+    background-color: black;
+    border-radius: 15px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+}
+.foot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box {
+    padding: 0px 20px 10px 20px;
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgba(55, 55, 55, 0.12);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.35s ease;
+}
+.img-box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+h2 {
+    font-size: 20px;
+    color: black;
+}
+button {
+    width: 70%;
+    position: relative;
+    border: none;
+    border-radius: 8px;
+    background-color: brown;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover {
+    background-color: #333;
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-imgg {
+    width: 50px;
+    height: 5px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50px;
+}
+.bxs-trash:hover {
+    cursor: pointer;
+    color: #333;
+}
+.wrapper h4{
+    padding-bottom: 5px;
+    color: brown;
+}
+.input_group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input_box{
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input_box:last-child{
+    margin-right: 0;
+}
+.input_box .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+.input_box .icon{
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: #333;
+    background-color: white;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid black;
+    border-right: none;
+}
+.dob{
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background-color: white;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid lightslategray;
+    border-right: 3px;
+}
+.radio{
+    display: none;
+}
+.input_box label:first-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-right: none;
+}
+.input_box label:last-of-type{
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.radio:checked+label{
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    transition: 0.5s;
+}
+.input_box label{
+    width: 50%;
+    padding: 13px;
+    background-color: white;
+    float: left;
+    text-align: center;
+    border: 1px solid lightslategray;
+}
+.input_box button{
+    width: 100%;
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-right: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+.input_box button:hover{
+    cursor: pointer;
+    background-color: rgb(184, 86, 11);
+}
+.footer {
+    padding: 40px 17%;
+    background-color: #111111;
+}
+.footer-box p {
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
